@@ -1,0 +1,50 @@
+// Header Component
+// ------------------------------
+.main-header {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-color: #efefef;
+    width:100%;
+
+    &.fixed{
+        position:fixed;
+    }
+
+    &__search {
+        input {
+            height: 45px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #cccc;
+            box-shadow: none;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 10px 0;
+    }
+
+    &__logo {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__icons{
+        display:none;
+
+        @media only screen and (max-width: 992px){
+            display:block;
+        }
+    }
+}
